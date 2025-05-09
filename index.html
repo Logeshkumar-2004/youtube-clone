@@ -1,1 +1,413 @@
+<!DOCTYPE html>
+<!-- youtube clone  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Homepage Clone </title>
+    <!-- Linking Unicons For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <!----tittle icon-->
+    <link rel="icon" type="image/webp" href="yt.webp">
 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="sidebar-hidden">
+    <div class="container">
+      <!-- Header / Navbar -->
+      <header>
+        <nav class="navbar">
+          <div class="nav-section nav-left">
+            <button class="nav-button menu-button">
+              <i class="uil uil-bars"></i>
+            </button>
+            <a href="#" class="nav-logo">
+                
+              <img src="yt.webp" alt="Logo" class="logo-image" />
+              <h2 class="logo-text">youtube</h2>
+            </a>
+          </div>
+          <div class="nav-section">
+            <button class="nav-button search-back-button" id="search-back-button">
+              <i class="uil uil-arrow-left"></i>
+            </button>
+          </div>
+          <div class="nav-section nav-center">
+            <form action="#" class="search-form">
+              <input type="search" placeholder="Search" class="search-input" required />
+              <button class="nav-button search-button">
+                <i class="uil uil-search"></i>
+              </button>
+            </form>
+            <button class="nav-button mic-button">
+              <i class="uil uil-microphone"></i>
+            </button>
+          </div>
+          <div class="nav-section nav-right">
+            <button class="nav-button search-button" id="search-button">
+              <i class="uil uil-search"></i>
+            </button>
+            <button class="nav-button theme-button">
+              <i class="uil uil-moon"></i>
+            </button>
+            <img src="tony-stark.webp" alt="User Image" class="user-image" />
+          </div>
+        </nav>
+      </header>
+      <!-- Main Layout -->
+      <main class="main-layout">
+        <div class="screen-overlay"></div>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="nav-section nav-left">
+            <button class="nav-button menu-button">
+              <i class="uil uil-bars"></i>
+            </button>
+            <a href="#" class="nav-logo">
+              <img src="yt.webp" alt="Logo" class="logo-image" />
+              <h2 class="logo-text">youtube</h2>
+            </a>
+          </div>
+          <div class="links-container">
+            <div class="link-section">
+              <a href="https://www.youtube.com/" class="link-item"> <i class="uil uil-estate"></i> Home </a>
+              <a href="https://www.youtube.com/shorts/bOIlT_IIvK4" class="link-item"> <i class="uil uil-video"></i> Shorts </a>
+              <a href="https://www.youtube.com/feed/subscriptions" class="link-item"> <i class="uil uil-tv-retro"></i> Subscriptions </a>
+            </div>
+            <div class="section-separator"></div>
+            <div class="link-section">
+              <h4 class="section-title">You</h4>
+              <a href="https://www.youtube.com/feed/you" class="link-item"> <i class="uil uil-user-square"></i> Your channel </a>
+              <a href="https://www.youtube.com/feed/history" class="link-item"> <i class="uil uil-history"></i> History </a>
+              <a href="#" class="link-item"> <i class="uil uil-clock"></i> Watch later </a>
+            </div>
+            <div class="section-separator"></div>
+            <div class="link-section">
+              <h4 class="section-title">Explore</h4>
+              <a href="https://www.youtube.com/feed/trending?bp=6gQJRkVleHBsb3Jl" class="link-item"> <i class="uil uil-fire"></i> Trending </a>
+              <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ" class="link-item"> <i class="uil uil-music"></i> Music </a>
+              <a href="https://www.youtube.com/gaming" class="link-item"> <i class="uil uil-basketball"></i> Gaming </a>
+              <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw" class="link-item"> <i class="uil uil-trophy"></i> Sports </a>
+            </div>
+            <div class="section-separator"></div>
+            <div class="link-section">
+              <h4 class="section-title">More from YouTube</h4>
+              <a href="https://www.youtube.com/premium" class="link-item"> <i class="uil uil-shield-plus"></i> YouTube Plus </a>
+              <a href="https://music.youtube.com/" class="link-item"> <i class="uil uil-headphones-alt"></i> YouTube Music </a>
+              <a href="https://www.youtubekids.com/?source=youtube_web" class="link-item"> <i class="uil uil-airplay"></i> YouTube Kids </a>
+            </div>
+            <div class="section-separator"></div>
+            <div class="link-section">
+              <a href="https://accounts.google.com/v3/signin/confirmidentifier?continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252Faccount%253Fpbjreload%253D102%26feature%3Dredirect_login&hl=en&ifkv=ASSHykqt6ktJkIuGOOxuJuBnGNoMJgTdeBGsBl3P52fBgwSgU-CXcTGJ9RQ3DJwXw-zfDY2nrpKj&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1409057268%3A1741164938245422&ddm=1" class="link-item"> <i class="uil uil-setting"></i> Settings </a>
+              <a href="https://www.youtube.com/reporthistory" class="link-item"> <i class="uil uil-file-medical-alt"></i> Report </a>
+              <a href="#" class="link-item"> <i class="uil uil-question-circle"></i> Help </a>
+              <a href="#" class="link-item"> <i class="uil uil-exclamation-triangle"></i> Feedback </a>
+            </div>
+          </div>
+        </aside>
+        <div class="content-wrapper">
+          <!-- Category List -->
+           <!---all-->
+          <div class="category-list">
+            <a href="https://www.youtube.com/"><button class="category-button active">All</button></a>
+
+
+
+           
+            <!----oggy& the cockoaches-->
+            <a href="https://www.youtube.com/results?search_query=oggy+and+the+cockroaches"><button class="category-button">oggy and the cockroaches</button></a>
+           
+            <!----music-->
+            <a href="https://www.youtube.com/results?search_query=anirudh+ravichander"><button class="category-button">anirudh ravichander songs</button></a>
+            
+            <!----tom & jerry-->
+           <a href="https://www.youtube.com/results?search_query=tom+and+jerry"><button class="category-button">tom & jerry</button></a>
+            
+           <!----node js-->
+           <a href="https://www.youtube.com/results?search_query=node+js"><button class="category-button">Node.js</button>
+           </a>
+            
+
+            <!----javascript-->
+            <a href="https://www.youtube.com/results?search_query=javascript"><button class="category-button">JavaScript</button></a>
+            
+
+            <!----React.js-->
+            <a href="https://www.youtube.com/results?search_query=react+js"><button class="category-button">React.js</button></a>
+            
+
+            <!----tamil hollywood time-->
+            <a href="https://www.youtube.com/results?search_query=tamil+hoolywood+time"><button class="category-button">tamil hollywood time</button></a>
+            
+
+            <!----Codingnepal-->
+            <a href="https://www.youtube.com/results?search_query=coding+nepal"> <button class="category-button">Coding nepal</button></a>
+            
+
+            <!----marvel-->
+            <a href="https://www.youtube.com/results?search_query=marvel"> <button class="category-button">marvel</button></a>
+            
+
+            <!----stock market-->
+            <a href="https://www.youtube.com/results?search_query=finance+boosan"><button class="category-button">finance boosan</button>
+            </a>
+            
+            <!----Web design-->
+            <button class="category-button">Web design</button>
+
+            <!----webdevelopment-->
+            <a href="https://www.youtube.com/results?search_query=web+development"> <button class="category-button"> web development</button></a>
+           
+            <!----DC-->
+            <a href="https://www.youtube.com/@dcofficial"> <button class="category-button">DC</button></a>
+            
+            <!---CSS-->
+
+            <a href="https://www.youtube.com/results?search_query=css"><button class="category-button">CSS</button></a>
+            
+            <!----Express.js-->
+            <a href="https://www.youtube.com/results?search_query=express+js">  <button class="category-button">Express.js</button></a>
+           
+          </div>
+          <!-- Video List -->
+           <!------Oggy and the Cockroaches -->
+          <div class="video-list">
+            <a href="https://youtu.be/-7jAVwbqCUE?t=42" class="video-card">
+              <div class="thumbnail-container">
+                <img src="11.webp" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">07:36</p>
+              </div>
+              <div class="video-info">
+                <img src="1.webp" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">Oggy and the Cockroaches - Sport Fans (S04E26) Full Episode in HD</h2>
+                  <p class="channel-name">Oggy</p>
+                  <p class="views">92M Views • 9 year ago</p>
+                </div>
+              </div>
+            </a>
+            
+
+            <!---- Tom & Jerry---->
+            <a href="https://www.youtube.com/watch?v=AGBjI0x9VbM" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://tse4.mm.bing.net/th?id=OVP._4IW8bPXZ7ERHYMIeyhKOAHgFo&pid=Api&w=296&h=156&c=7&p=0" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">29:43</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.ggpht.com/R2KYxsEnGbM3nEp_VzD0dA8zkn_APB6Kil0TOCWQpNR5RcfcSOt9DYnT0MgbckxWfeNEpj3CvA=s48-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">Tom & Jerry | Best of Little Quacker | Classic Cartoon Compilation | WB Kids</h2>
+                  <p class="channel-name">WB Kids</p>
+                  <p class="views">726M Views • 6 years ago</p>
+                </div>
+              </div>
+            </a>
+
+             <!----codingnepal clone chatgpt-->
+             <a href="https://youtu.be/atKtG29iroY?t=3" class="video-card">
+              <div class="thumbnail-container">
+                <img src="chart gpt.webp" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">1:37:13</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/Fk8YQYDNYfZDKiDTyGpmurrXiuW6cFo6BgfvXrnsH0a0MQrABaNUzTRwOGKUZ7rPy8j3W42J=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">Create Your Own ChatGPT in HTML CSS and JavaScript | ChatGPT Clone HTML CSS and JavaScript</h2>
+                  <p class="channel-name">CodingLab</p>
+                  <p class="views">89K Views • 1 year ago</p>
+                </div>
+              </div>
+            </a>
+
+            <!---- morking -->
+            <a href="https://youtu.be/nHStWAV6IvI?t=1" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://i.ytimg.com/vi/nHStWAV6IvI/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLCLuwacSe_Q8U6mWAJuODQKiEl2YQ" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">5:50</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_ny_3E5NhElVE1msnq1HUwtnpjlV0JdXJ3h11Df2tlNmTQ=s160-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">Eminem - superman [Official Music Video]</h2>
+                  <p class="channel-name">EminemMusic
+                  </p>
+                  <p class="views">315M Views • 6 year ago</p>
+                </div>
+              </div>
+            </a>
+            <!----Error Makes Clever--->
+            <a href="https://youtu.be/BVIoAILnZ4Q?list=PLvepBxfiuao1hO1vPOskQ1X4dbjGXF9bm&t=1" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://i.ytimg.com/vi/BVIoAILnZ4Q/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBs8HOUF1Opsn9RLB0jIb1L_njX3g" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">16:24</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/10iKRvxRHNx00HW9Ch2mQ5Mzuvm9Edv-c9s40uJ_KftC9zm7bzgIoNtDRZ6sLNwVYRdPPfszP1c=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">#01 Python Programming Tutorial Series 📚| Introduction to Python 🧑‍💻| EMC ACADEMY 💪</h2>
+                  <p class="channel-name">Error Makes Clever</p>
+                  <p class="views">14.2K Views • 4 days ago</p>
+                </div>
+              </div>
+            </a>
+
+            <!-----good bad ugly-->
+            <a href="https://youtu.be/BL1ecHnJqfY?t=4" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://tse4.mm.bing.net/th?id=OIF.Y%2bvarrQpUUjhdXvc57dzew&pid=Api&P=0&h=180" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">1:29</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_lAjgT5rMJGluMWOImj9Q3VGXBcRrS6SWjb4Lb2xsgFliE=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">Good Bad Ugly Tamil Teaser | Ajith Kumar | Trisha | Adhik Ravichandran | Mythri Movie Makers</h2>
+                  <p class="channel-name">Mythri Movie Makers</p>
+                  <p class="views">955k Views • 3 days ago</p>
+                </div>
+              </div>
+            </a>
+
+            <!------jailer 2-->
+            <a href="https://youtu.be/aaNq2NL6D4A?t=27" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://tse4.mm.bing.net/th?id=OVP.BHvaC3IEh9TStQFai04--gHgFo&pid=Api&w=296&h=156&c=7&p=0" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">4:00</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_kdFSFaUrMKl1-R4r1J2XUBvWPTZJfUTCD4Y16SSczWCP4=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">JAILER 2 - Announcement Teaser | Superstar Rajinikanth | Sun Pictures | Nelson | Anirudh</h2>
+                  <p class="channel-name">Sun TV</p>
+                  <p class="views">29.6M Views • 1 month ago</p>
+                </div>
+              </div>
+            </a>
+
+
+             <!------coding nepal  chat ai-->
+             <a href="https://youtu.be/B21G6tUI4L0?t=9" class="video-card">
+              <div class="thumbnail-container">
+                <img src="chat ai.webp" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">1:11:13</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/Fk8YQYDNYfZDKiDTyGpmurrXiuW6cFo6BgfvXrnsH0a0MQrABaNUzTRwOGKUZ7rPy8j3W42J=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">🤖 Build AI Chatbot in HTML CSS & JavaScript | AI Chatbot Tutorial in JavaScript</h2>
+                  <p class="channel-name">CodingLab</p>
+                  <p class="views">74K Views • 4 months ago</p>
+                </div>
+              </div>
+            </a>
+
+            <!---coolie-->
+            <a href="https://youtu.be/6xqNk5Sf5jo?t=1" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.zvIPLRVuHCkznbKTwkFU8wHaFj&pid=Api&P=0&h=180" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">3:16</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_kdFSFaUrMKl1-R4r1J2XUBvWPTZJfUTCD4Y16SSczWCP4=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">COOLIE - #Thalaivar171 Title Teaser | Superstar Rajinikanth| Sun Pictures| Lokesh Kanagaraj| Anirudh</h2>
+                  <p class="channel-name">Sun TV</p>
+                  <p class="views">28M Views • 10 months ago</p>
+                </div>
+              </div>
+            </a>
+
+            <!-----Eena meena teeka-->
+            <a href="https://youtu.be/W-RAUYomJho?t=1" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.GuDfmjajdGkRb_qbM2jLhQAAAA&pid=Api&P=0&h=180" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">3:20</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/p4TyMutaPSAFZNzFWSGHM0rbT59hPYuAhvMFfpi6uyNJyRLeUG5og5x91rtE6vnb5Vq1TcWT=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">Theri Songs | Eena Meena Teeka Official Video Song | Vijay, Nainika | Atlee | G.V.Prakash Kumar</h2>
+                  <p class="channel-name">Think Music India</p>
+                  <p class="views">168M Views • 8 years ago</p>
+                </div>
+              </div>
+            </a>
+
+            <!------kurumba-->
+            <a href="https://youtu.be/ZBtMymYojsg?t=3" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.ajGs3MHxvbqoBIfPefUnYgHaEK&pid=Api&P=0&h=180" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">4:33</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/JyW58ywuh93rxLy6AwiOJ99HsYrh3iODK49mZ2BkxKkREQT1_pGy2rx7PZ3o1ROhhNc4i03d24Y=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">Tik Tik Tik - Kurumba Video | Jayam Ravi | D.Imman | Sid Sriram</h2>
+                  <p class="channel-name">Sony Music South</p>
+                  <p class="views">98M Views • 6 years  ago</p>
+                </div>
+              </div>
+            </a>
+
+           
+
+
+            <!-----coding nepal image generater-->
+            <a href="https://youtu.be/J5zsvyEfhi4?t=4" class="video-card">
+              <div class="thumbnail-container">
+                <img src="image ai.webp" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">1:11:08</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/Fk8YQYDNYfZDKiDTyGpmurrXiuW6cFo6BgfvXrnsH0a0MQrABaNUzTRwOGKUZ7rPy8j3W42J=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">✨ Build AI Image Generator in HTML CSS & JavaScript | Text-to-Image Generator in JavaScript</h2>
+                  <p class="channel-name">CodingNepal</p>
+                  <p class="views">5.7K • 2 days ago</p>
+                </div>
+              </div>
+            </a>
+           
+
+            <!-----Kadhal Sadugudu Video Song ---->
+            <a href="https://youtu.be/OHu-T6s5_u0?t=1" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://i.ytimg.com/vi/T8mYfvUPKtA/hqdefault.jpg?sqp=-oaymwEmCKgBEF5IWvKriqkDGQgBFQAAiEIYAdgBAeIBCggYEAIYBjgBQAE=&rs=AOn4CLBAIJ-GU2cAMJYQF9ykzUJ-6ABf5g" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">04:45</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/8W4x5Or2uy7fywYcM6WVL7m3qKlQ8OrtjOsw_srtYcjzapqxuhby3_QJz8g2PiztQw1N5lBVVw=s120-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">Kadhal Sadugudu Video Song | Alaipayuthey Tamil Movie | Madhavan | Shalini | AR Rahman</h2>
+                  <p class="channel-name">AP International</p>
+                  <p class="views">49M Views • 13 year ago</p>
+                </div>
+              </div>
+            </a>
+
+
+            <!----Paththavaikkum video song-->
+            <a href="https://youtu.be/IARc_LBgQZE" class="video-card">
+              <div class="thumbnail-container">
+                <img src="https://i.ytimg.com/vi/IARc_LBgQZE/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLALAIm9nt-iGX4Pvr91KUk3IyAuyw" alt="Video Thumbnail" class="thumbnail" />
+                <p class="duration">3:45</p>
+              </div>
+              <div class="video-info">
+                <img src="https://yt3.googleusercontent.com/ytc/AIdro_lAjgT5rMJGluMWOImj9Q3VGXBcRrS6SWjb4Lb2xsgFliE=s160-c-k-c0x00ffffff-no-rj" alt="Channel Logo" class="icon" />
+                <div class="video-details">
+                  <h2 class="title">Paththavaikkum | Devara Second Single | NTR | Janhvi Kapoor | Anirudh | Deepthi Suresh | 27 Sep 2024</h2>
+                  <p class="channel-name">T-Series Tamil
+                </p>
+                  <p class="views">24M Views • 6 months ago</p>
+                </div>
+              </div>
+
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+  </body>
+</html>
